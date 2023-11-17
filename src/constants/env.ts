@@ -1,0 +1,2 @@
+export const MICROCMS_SERVICE_DOMAIN = process.env.MICROCMS_SERVICE_DOMAIN;
+export const MICROCMS_API_KEY = process.env.MICROCMS_API_KEY;
