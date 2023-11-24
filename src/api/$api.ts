@@ -1,6 +1,7 @@
 import type { AspidaClient } from 'aspida';
 import { dataToURLString } from 'aspida';
 import type { Methods as Methods_dlvvmz } from './blogs';
+import type { Methods as Methods_chhvph } from './blogs/_id@string';
 
 const api = <T>({ baseURL, fetch }: AspidaClient<T>) => {
   const prefix = (baseURL === undefined ? '' : baseURL).replace(/\/$/, '');
@@ -9,6 +10,17 @@ const api = <T>({ baseURL, fetch }: AspidaClient<T>) => {
 
   return {
     blogs: {
+      _id: (val1: string) => {
+        const prefix1 = `${PATH0}/${val1}`;
+
+        return {
+          get: (option?: { config?: T | undefined } | undefined) =>
+            fetch<Methods_chhvph['get']['resBody']>(prefix, prefix1, GET, option).json(),
+          $get: (option?: { config?: T | undefined } | undefined) =>
+            fetch<Methods_chhvph['get']['resBody']>(prefix, prefix1, GET, option).json().then(r => r.body),
+          $path: () => `${prefix}${prefix1}`,
+        };
+      },
       get: (option?: { query?: Methods_dlvvmz['get']['query'] | undefined, config?: T | undefined } | undefined) =>
         fetch<Methods_dlvvmz['get']['resBody']>(prefix, PATH0, GET, option).json(),
       $get: (option?: { query?: Methods_dlvvmz['get']['query'] | undefined, config?: T | undefined } | undefined) =>
