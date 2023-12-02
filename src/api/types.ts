@@ -5,6 +5,7 @@ export type Content = {
     content?: string;
     eyecatch: {
         url: string;
+        alt: string
         height: number;
         width: number;
     };

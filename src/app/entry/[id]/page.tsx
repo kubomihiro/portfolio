@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { client } from "@/api";
 import { EntryBody } from "@/components/EntryBody/EntryBody";
+import { Metadata } from "next";
+
 
 export async function generateStaticParams() {
   const { contents: entries } = await client.blogs.$get({
@@ -14,6 +16,16 @@ export async function generateStaticParams() {
     id: entry.id,
   }));
 }
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const id = params?.id;
+  const entry = await client.blogs._id(id).$get();
+  return {
+    title: `Portfolio - ${entry.title}`,
+    description: entry.description,
+  };
+}
+//リンク飛んだ時にタイトルが表示されるようになる
 
 type Props = {
   params: { id: string };

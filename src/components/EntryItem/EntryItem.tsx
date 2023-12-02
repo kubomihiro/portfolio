@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./EntryItem.module.css";
 
@@ -8,8 +9,9 @@ import styles from "./EntryItem.module.css";
     description?: string;
     eyecatch?: {
       url: string;
-      height?: number;
-      width?: number; 
+      alt: string;
+      height: number;
+      width: number; 
  };
  };
 
@@ -24,7 +26,12 @@ import styles from "./EntryItem.module.css";
       )}
       {props.eyecatch && (
         <figure className={styles.image}>
-          <img src={props.eyecatch.url} alt="" />
+          <Image 
+          src={props.eyecatch.url} 
+          alt={props.eyecatch.alt}
+          width={props.eyecatch.width}
+          height={props.eyecatch.height}
+          />
         </figure>
       )}
     </article>
