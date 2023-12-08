@@ -11,6 +11,7 @@ export default async function Home() {
       offset: 0,
       limit: 10,
       filters: "publishedAt[greater_than]2023-11-10",
+      //上の数字直すとキャッシュクリアされる
       fields: "id,title,category,publishedAt,eyecatch,description",
     },
   });
