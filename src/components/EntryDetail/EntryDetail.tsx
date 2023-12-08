@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import styles from "./EntryItem.module.css";
+import styles from "./EntryDetail.module.css";
+
+import { EntryBody } from "@/components/EntryBody/EntryBody";
+
 
  type Props = {
-    id :string;
     title?: string;
     description?: string;
+    content?: string;
     eyecatch?: {
       url: string;
       alt: string;
@@ -15,12 +17,12 @@ import styles from "./EntryItem.module.css";
  };
  };
 
- export const EntryItem = (props: Props) => {
+ export const EntryDetail = (props: Props) => {
   return (
-    <article className={styles.entryItem}>
-      <h2 className={styles.entryItemTitle}>
-        <Link href={`/entry/${props.id}`}>{props.title}</Link>
-      </h2>
+    <article className={styles.entryDetail}>
+      <h1 className={styles.entryDetailTitle}>
+        {props.title}
+      </h1>
       
       {props.description && (
         <p className={styles.description}>{props.description}</p>
@@ -35,6 +37,10 @@ import styles from "./EntryItem.module.css";
           />
         </figure>
       )}
+
+      <EntryBody>
+         <div dangerouslySetInnerHTML={{ __html: props.content! }} />
+      </EntryBody>
     </article>
   );
 };

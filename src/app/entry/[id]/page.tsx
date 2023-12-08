@@ -1,7 +1,6 @@
-import Image from "next/image";
 import { client } from "@/api";
-import { EntryBody } from "@/components/EntryBody/EntryBody";
 import { Metadata } from "next";
+import { EntryDetail } from "@/components/EntryDetail/EntryDetail";
 
 
 export async function generateStaticParams() {
@@ -40,10 +39,11 @@ export default async function Entry({ params }: Props) {
 
   return (
     <>
-      <h1>{entry.title}</h1>
-      <EntryBody>
-      <div dangerouslySetInnerHTML={{ __html: entry.content! }} />
-      </EntryBody>
+      <EntryDetail
+        title={entry.title}
+        content={entry.content}
+        eyecatch={entry.eyecatch}
+      />
     </>
   );
 }

@@ -1,0 +1,35 @@
+.entryDetail{
+  border: 1px solid rgb(150, 13, 254);
+  background-color: azure;
+  margin: 16px;
+  padding: 16px;
+  display: grid;
+    grid-template:
+      "image title" auto
+      "image description" auto /
+      200px 1fr;
+    grid-gap: 16px;
+    border-radius: 4px;
+  /* 行 横    列 縦 */
+  }
+  
+  .entryDetailtitle{
+      grid-area: title;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .description {
+      grid-area: description;
+      font-size: 14px;
+    }
+    
+    .image {
+      grid-area: image;
+      font-size: 14px;
+    }
+    
+    .image img {
+      width: 100%;
+      height: auto;
+    }

@@ -1,6 +1,8 @@
 .entryBody {
   border: 1px solid #ccc;
   background-color: rgb(149, 255, 0);
+  padding: 30px;
+
 }
 
 .entryBody p {
