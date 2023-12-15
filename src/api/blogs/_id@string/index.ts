@@ -1,7 +1,7 @@
-import { Content } from "../../types";
+import { Content } from '../../types'
 
 export interface Methods {
   get: {
-    resBody: Content;
-  };
+    resBody: Content
+  }
 }

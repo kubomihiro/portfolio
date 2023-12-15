@@ -7,13 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "api:build": "aspida"
+    "api:build": "aspida",
+    "prettier": "prettier --write \"src/**/*.{js,cjs,jsx,ts,tsx}\""
   },
   "dependencies": {
     "@aspida/fetch": "^1.14.0",
     "aspida": "^1.14.0",
+    "eslint-config-prettier": "^9.1.0",
     "microcms-js-sdk": "^2.7.0",
     "next": "14.0.2",
+    "prettier": "^3.1.1",
     "react": "^18",
     "react-dom": "^18"
   },
