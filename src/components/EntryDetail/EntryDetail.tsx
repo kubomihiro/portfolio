@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from './EntryDetail.module.css'
+import styles from './EntryDetail.module.scss'
 
 import { EntryBody } from '@/components/EntryBody/EntryBody'
 

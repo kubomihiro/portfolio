@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './EntryItem.module.css'
+import styles from './EntryItem.module.scss'
 
 type Props = {
   id: string

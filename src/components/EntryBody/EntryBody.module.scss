@@ -1,0 +1,23 @@
+.entryBody {
+  border: 1px solid #ccc;
+  background-color: rgb(149, 255, 0);
+  padding: 30px;
+
+  & p {
+  }
+
+  & ul {
+    margin: 32px;
+    border: 1px solid #ccc;
+  }
+
+  & li {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  & img {
+    width: 100%;
+    auto: auto;
+  }
+}
