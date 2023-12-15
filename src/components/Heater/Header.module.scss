@@ -1,11 +1,13 @@
 .header {
-    padding: 16px;
-    background-color: rgb(23, 23, 148);
-  }
-  
-  .title {
+  padding: 16px;
+  background-color: rgb(23, 23, 148);
+}
+
+.title {
+  color: #fff;
+
+  & a {
     color: #fff;
+    text-decoration: none;
   }
-  .title a {
-    color: #fff;
-  }
+}
