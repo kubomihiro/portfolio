@@ -9,6 +9,22 @@ export const Header: React.FC = () => {
       <h1 className={styles.title}>
         <Link href='/'>Mihiro's Portfolio</Link>
       </h1>
+      <>
+        <ul className={styles.Menu}>
+          <li className={styles.MenuDetail}>
+            <Link href='/'>Home</Link>
+          </li>
+          <li className={styles.MenuDetail}>
+            <Link href='/'>Works</Link>
+          </li>
+          <li className={styles.MenuDetail}>
+            <Link href='/'>About</Link>
+          </li>
+          <li className={styles.MenuDetail}>
+            <Link href='/'>Contact</Link>
+          </li>
+        </ul>
+      </>
     </header>
   )
 }

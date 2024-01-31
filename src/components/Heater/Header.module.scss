@@ -1,10 +1,17 @@
 .header {
   padding: 16px;
   background-color: rgb(23, 23, 148);
+  //menu追加↓
+  display: flex;
+  width: 1040px;
+  height: 80px;
+  padding: 0px 22px;
+  align-items: center;
+  gap: 32px;
 }
 
 .title {
-  color: #ee1010;
+  color: #ffffff;
 
   & a {
     text-decoration: none;
@@ -15,4 +22,16 @@
     font-weight: 400;
     line-height: normal;
   }
+}
+.MenuDetail a {
+  color: #fffb4a;
+  display: flex;
+  height: 40px;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.Menu {
+  display: flex;
 }

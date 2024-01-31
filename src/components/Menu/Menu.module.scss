@@ -1,0 +1,16 @@
+ul {
+  display: flex;
+  align-items: flex-start;
+}
+
+li {
+  color: #fffb4a;
+
+  & a {
+    display: flex;
+    height: 40px;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
