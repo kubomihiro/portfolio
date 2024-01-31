@@ -7,10 +7,10 @@ type Props = {
 
 export const Footer = ({ children }: Props) => {
   return (
-    <footer className={styles.fooder}>
-      {children}
+    <footer className={styles.footer}>
+      {/* {children} */}
       {/* ↑test の文字が表示される */}
-      <p className={styles.copyright}>©2023 Portforio</p>
+      <p className={styles.copyright}>@2023 Kubo Mihiro</p>
     </footer>
   )
 }

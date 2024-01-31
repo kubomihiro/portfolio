@@ -1,8 +1,13 @@
-.fooder{
-    padding: 16px;
-    background-color: rgb(23, 23, 148);
+.footer {
+  background: #000e8c;
+  height: 70px;
+  flex-shrink: 0;
 }
-.copyright{
-    color: azure;
-    text-align: center;
+.copyright {
+  text-align: center;
+  color: #fffc82;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 70px;
 }
