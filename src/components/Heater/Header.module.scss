@@ -4,10 +4,15 @@
 }
 
 .title {
-  color: #fff;
+  color: #ee1010;
 
   & a {
-    color: #fff;
     text-decoration: none;
+    color: #fffc82;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
