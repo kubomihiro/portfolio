@@ -4,9 +4,11 @@
 .title {
   color: #fffb4a;
   border: 3px solid rgb(255, 0, 162);
-
   border-bottom: 1px solid #fffb4a;
+  font-family: Inter;
+  font-weight: 400;
 }
 .image {
-  width: auto;
+  border: 1px solid red;
+  width: 300px;
 }
