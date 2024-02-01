@@ -3,7 +3,7 @@
   background-color: rgb(23, 23, 148);
   //menu追加↓
   display: flex;
-  width: 1040px;
+
   height: 80px;
   padding: 0px 22px;
   align-items: center;
@@ -23,15 +23,19 @@
     line-height: normal;
   }
 }
+
+.Menu {
+  display: flex;
+  list-style: none;
+  margin: 0 0 0 auto;
+}
+
 .MenuDetail a {
   color: #fffb4a;
   display: flex;
   height: 40px;
-  padding: 20px 30px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-}
-.Menu {
-  display: flex;
 }
