@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { client } from '@/api'
-import { EntryItem } from '@/components/EntryItem/EntryItem'
+// import { EntryItem } from '@/components/EntryItem/EntryItem'
+import { Works } from '@/components/Works/Works'
 ;/インポートしてる/
 
 export default async function Home() {
@@ -20,13 +21,21 @@ export default async function Home() {
   return (
     <>
       {entries.map((v) => (
-        <EntryItem
+        // <EntryItem
+        //   id={v.id}
+        //   key={v.id}
+        //   title={v.title}
+        //   description={v.description}
+        //   eyecatch={v.eyecatch}
+        // ></EntryItem>
+
+        <Works
           id={v.id}
-          key={v.id}
-          title={v.title}
-          description={v.description}
+          // key={v.id}
+          // title={v.title}
+          // description={v.description}
           eyecatch={v.eyecatch}
-        ></EntryItem>
+        ></Works>
       ))}
     </>
   )
