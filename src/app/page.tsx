@@ -31,7 +31,7 @@ export default async function Home() {
 
         <Works
           id={v.id}
-          // key={v.id}
+          key={v.id}
           // title={v.title}
           // description={v.description}
           eyecatch={v.eyecatch}
