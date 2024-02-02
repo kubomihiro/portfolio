@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import { client } from '@/api'
-// import { EntryItem } from '@/components/EntryItem/EntryItem'
-import { Works } from '@/components/Works/Works'
-;/インポートしてる/
+import { EntryThumbnails } from '@/components/EntryThumbnails/EntryThumbnails'
+import { EntryThumbnail } from '@/components/EntryThumbnail/EntryThumbnail'
+import { EntryItem } from '@/components/EntryItem/EntryItem'
+import { EntryThumbnailContainer } from '@/components/EntryThumbnailContainer/EntryThumbnailContainer'
+// ;/インポートしてる/
 
 export default async function Home() {
   const { contents: entries } = await client.blogs.$get({
@@ -20,23 +22,18 @@ export default async function Home() {
 
   return (
     <>
-      {entries.map((v) => (
-        // <EntryItem
-        //   id={v.id}
-        //   key={v.id}
-        //   title={v.title}
-        //   description={v.description}
-        //   eyecatch={v.eyecatch}
-        // ></EntryItem>
-
-        <Works
-          id={v.id}
-          key={v.id}
-          // title={v.title}
-          // description={v.description}
-          eyecatch={v.eyecatch}
-        ></Works>
-      ))}
+      <EntryThumbnails entries={entries} />
+      <EntryThumbnailContainer>
+        {entries.map((v) => (
+          <EntryThumbnail
+            id={v.id}
+            key={v.id}
+            title={v.title}
+            description={v.description}
+            eyecatch={v.eyecatch}
+          ></EntryThumbnail>
+        ))}
+      </EntryThumbnailContainer>
     </>
   )
 }

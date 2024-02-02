@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './EntryItem.module.scss'
+import styles from './EntryThumbnail.module.scss'
 
 type Props = {
   id: string
@@ -15,7 +15,7 @@ type Props = {
   }
 }
 
-export const EntryItem = (props: Props) => {
+export const EntryThumbnail = (props: Props) => {
   return (
     <article className={styles.entryItem}>
       <h2 className={styles.entryItemTitle}>

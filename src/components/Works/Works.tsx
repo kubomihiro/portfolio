@@ -17,7 +17,7 @@ type Props = {
 
 export const Works = (props: Props) => {
   return (
-    <article className={styles.Works}>
+    <div className={styles.Works}>
       <h2 className={styles.title}>Works</h2>
       {props.eyecatch && (
         <figure className={styles.image}>
@@ -29,6 +29,6 @@ export const Works = (props: Props) => {
           />
         </figure>
       )}
-    </article>
+    </div>
   )
 }

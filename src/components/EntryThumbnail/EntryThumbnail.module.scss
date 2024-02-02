@@ -1,0 +1,21 @@
+.entryItem {
+  width: 25%;
+}
+
+.entryItemTitle {
+  display: none;
+}
+
+.description {
+  display: none;
+}
+
+.image {
+  grid-area: image;
+  font-size: 14px;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
