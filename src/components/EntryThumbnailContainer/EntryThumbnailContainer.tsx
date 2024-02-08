@@ -8,5 +8,13 @@ type Props = {
 }
 
 export const EntryThumbnailContainer = (props: Props) => {
-  return <div className={styles.EntryThumbnailContainer}>{props.children}</div>
+  return (
+    <div>
+      <div className={styles.EntryThumbnailContainer}>{props.children}</div>
+
+      <div className={styles.othersbtn}>
+        <p className={styles.btn}>and more</p>
+      </div>
+    </div>
+  )
 }
