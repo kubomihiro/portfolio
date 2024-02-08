@@ -17,8 +17,11 @@
   & img {
     width: 100%;
     height: auto;
+    height: 350px;
+    object-fit: cover;
   }
   background-color: bisque;
   border: 1px solid red;
   margin: 3px;
+  height: 350px;
 }
