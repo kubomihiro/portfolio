@@ -4,6 +4,7 @@ import { EntryThumbnails } from '@/components/EntryThumbnails/EntryThumbnails'
 import { EntryThumbnail } from '@/components/EntryThumbnail/EntryThumbnail'
 import { EntryItem } from '@/components/EntryItem/EntryItem'
 import { EntryThumbnailContainer } from '@/components/EntryThumbnailContainer/EntryThumbnailContainer'
+import { About } from '@/components/About/About'
 // ;/インポートしてる/
 
 export default async function Home() {
@@ -34,6 +35,7 @@ export default async function Home() {
           ></EntryThumbnail>
         ))}
       </EntryThumbnailContainer>
+      <About></About>
     </>
   )
 }
