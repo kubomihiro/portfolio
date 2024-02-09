@@ -1,24 +1,24 @@
 .entryBody {
-  border: 1px solid #ccc;
-  background-color: rgb(149, 255, 0);
-  padding: 30px;
+  color: #fffb4a;
 
-  & p {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: #fffb4a;
+  }
+
+  & p4 {
   }
 
   & ul {
     margin: 32px;
-    border: 1px solid #ccc;
   }
 
   & li {
     padding: 16px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  & img {
-    width: 100%;
-    auto: auto;
   }
 }
 // ↑scssを導入したから書き方変わった。
