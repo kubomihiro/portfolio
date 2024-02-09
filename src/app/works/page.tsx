@@ -24,18 +24,23 @@ export default async function Home() {
   return (
     <>
       <EntryThumbnails entries={entries} />
-      <EntryThumbnailContainer>
-        {entries.map((v) => (
+      {/* <EntryThumbnailContainer>
+        {entries.map((entry) => (
           <EntryThumbnail
-            id={v.id}
-            key={v.id}
-            title={v.title}
-            description={v.description}
-            eyecatch={v.eyecatch}
+            id={entry.id}
+            key={entry.id}
+            // title='title' // {}の場合は変数、シングルクオートの場合は文字列になる
+            // title={title}
+            description={entry.description}
+            eyecatch={entry.eyecatch}
           ></EntryThumbnail>
         ))}
-      </EntryThumbnailContainer>
-      <About />
+        <div>
+          <p>
+            <Link href='/works'>and More</Link>
+          </p>
+        </div>
+      </EntryThumbnailContainer> */}
     </>
   )
 }
