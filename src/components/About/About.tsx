@@ -3,19 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './About.module.scss'
 
-type Props = {
-  id: string
-  title?: string
-  description?: string
-  eyecatch?: {
-    url: string
-    alt: string
-    height: number
-    width: number
-  }
-}
-
-export const About: React.FC = () => {
+export const About = () => {
   return (
     <div className={styles.title}>
       <h2 className={styles.About}>About</h2>

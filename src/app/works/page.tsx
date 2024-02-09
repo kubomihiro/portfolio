@@ -35,7 +35,7 @@ export default async function Home() {
           ></EntryThumbnail>
         ))}
       </EntryThumbnailContainer>
-      <About></About>
+      <About />
     </>
   )
 }

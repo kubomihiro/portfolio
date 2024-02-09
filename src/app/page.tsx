@@ -34,8 +34,11 @@ export default async function Home() {
             eyecatch={v.eyecatch}
           ></EntryThumbnail>
         ))}
+        <div>
+          <p>and more</p>
+        </div>
       </EntryThumbnailContainer>
-      <About></About>
+      <About />
     </>
   )
 }
