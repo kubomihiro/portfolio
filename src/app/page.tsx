@@ -12,12 +12,14 @@ export default async function Home() {
   const { contents: entries } = await client.blogs.$get({
     query: {
       offset: 0,
-      limit: 10,
+      limit: 2,
+      //↑取得する件数
       filters: 'publishedAt[greater_than]2023-11-10',
       //上の数字直すとキャッシュクリアされる
       fields: 'id,title,category,publishedAt,eyecatch,description',
     },
   })
+  //↑microCMSからブログを取得する
 
   //console.log(entries);
   //console.log(entries.map((v) => v.title));
