@@ -31,7 +31,7 @@ export const EntryThumbnails = (props: Props) => {
           <EntryThumbnail
             id={v.id}
             key={v.id}
-            title={v.title}
+            // title={v.title}  //作品名
             description={v.description}
             eyecatch={v.eyecatch}
           ></EntryThumbnail>
