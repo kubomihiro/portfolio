@@ -16,15 +16,17 @@ type Props = {
 }
 
 export const EntryThumbnail = (props: Props) => {
+  const linkText = `/entry/${props.id}` // '/entry/' + props.id 上はこの書き方省略形
+
   return (
     <article className={styles.entryItem}>
-      <h2 className={styles.entryItemTitle}>
-        <Link href={`/entry/${props.id}`}>{props.title}</Link>
+      <h2>
+        <Link href={linkText}>{props.title}</Link>
       </h2>
 
       {props.description && <p className={styles.description}>{props.description}</p>}
       {props.eyecatch && (
-        <Link href={`/entry/${props.id}`}>
+        <Link href={linkText}>
           <figure className={styles.image}>
             <Image
               src={props.eyecatch.url}

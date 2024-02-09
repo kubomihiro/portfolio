@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from './About.module.scss'
 import profileImage from '../../../img/profile-image.jpg'
 
-export const About: React.FC = () => {
+export const About = () => {
   return (
     <div className={styles.abountContainer}>
       <h2 className={styles.title}>About</h2>
