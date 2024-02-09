@@ -24,14 +24,16 @@ export const EntryThumbnail = (props: Props) => {
 
       {props.description && <p className={styles.description}>{props.description}</p>}
       {props.eyecatch && (
-        <figure className={styles.image}>
-          <Image
-            src={props.eyecatch.url}
-            alt={props.eyecatch.alt}
-            width={props.eyecatch.width}
-            height={props.eyecatch.height}
-          />
-        </figure>
+        <Link href={`/entry/${props.id}`}>
+          <figure className={styles.image}>
+            <Image
+              src={props.eyecatch.url}
+              alt={props.eyecatch.alt}
+              width={props.eyecatch.width}
+              height={props.eyecatch.height}
+            />
+          </figure>
+        </Link>
       )}
     </article>
   )

@@ -3,6 +3,7 @@ export type Content = {
   description?: string
   category?: string
   content?: string
+  publishedAt: string
   eyecatch: {
     url: string
     alt: string
