@@ -5,6 +5,7 @@ import { EntryThumbnail } from '@/components/EntryThumbnail/EntryThumbnail'
 import { EntryItem } from '@/components/EntryItem/EntryItem'
 import { EntryThumbnailContainer } from '@/components/EntryThumbnailContainer/EntryThumbnailContainer'
 import { About } from '@/components/About/About'
+import Link from 'next/link'
 // ;/インポートしてる/
 
 export default async function Home() {
@@ -21,21 +22,26 @@ export default async function Home() {
   //console.log(entries);
   //console.log(entries.map((v) => v.title));
 
+  const title = 'titleだよ'
+
   return (
     <>
       <EntryThumbnails entries={entries} />
       <EntryThumbnailContainer>
-        {entries.map((v) => (
+        {entries.map((entry) => (
           <EntryThumbnail
-            id={v.id}
-            key={v.id}
-            title={v.title}
-            description={v.description}
-            eyecatch={v.eyecatch}
+            id={entry.id}
+            key={entry.id}
+            // title='title' // {}の場合は変数、シングルクオートの場合は文字列になる
+            title={title}
+            description={entry.description}
+            eyecatch={entry.eyecatch}
           ></EntryThumbnail>
         ))}
         <div>
-          <p>and more</p>
+          <p>
+            <Link href='/works'>and More</Link>
+          </p>
         </div>
       </EntryThumbnailContainer>
       <About />
