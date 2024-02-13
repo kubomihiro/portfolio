@@ -17,18 +17,20 @@ type Props = {
 
 export const Works = (props: Props) => {
   return (
-    <div className={styles.Works}>
+    <div className={styles.abountContainer}>
       <h2 className={styles.title}>Works</h2>
-      {props.eyecatch && (
-        <figure className={styles.image}>
-          <Image
-            src={props.eyecatch.url}
-            alt={props.eyecatch.alt}
-            width={props.eyecatch.width}
-            height={props.eyecatch.height}
-          />
-        </figure>
-      )}
+      <div className={styles.container}>
+        {props.eyecatch && (
+          <figure className={styles.image}>
+            <Image
+              src={props.eyecatch.url}
+              alt={props.eyecatch.alt}
+              width={props.eyecatch.width}
+              height={props.eyecatch.height}
+            />
+          </figure>
+        )}
+      </div>
     </div>
   )
 }

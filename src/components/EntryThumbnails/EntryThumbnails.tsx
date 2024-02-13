@@ -24,19 +24,21 @@ type Props = {
 
 export const EntryThumbnails = (props: Props) => {
   return (
-    <div className={styles.title}>
-      <h2 className={styles.works}>Works</h2>
-      <EntryThumbnailContainer>
-        {props.entries.map((v) => (
-          <EntryThumbnail
-            id={v.id}
-            key={v.id}
-            // title={v.title}  //作品名
-            description={v.description}
-            eyecatch={v.eyecatch}
-          ></EntryThumbnail>
-        ))}
-      </EntryThumbnailContainer>
+    <div className={styles.abountContainer}>
+      <h2 className={styles.title}>Works</h2>
+      <div className={styles.container}>
+        <EntryThumbnailContainer>
+          {props.entries.map((v) => (
+            <EntryThumbnail
+              id={v.id}
+              key={v.id}
+              // title={v.title}  //作品名
+              description={v.description}
+              eyecatch={v.eyecatch}
+            ></EntryThumbnail>
+          ))}
+        </EntryThumbnailContainer>
+      </div>
     </div>
   )
 }

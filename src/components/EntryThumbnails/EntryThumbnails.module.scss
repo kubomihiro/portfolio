@@ -1,20 +1,20 @@
-.EntryThumbnailContainer {
+.abountContainer {
   display: flex;
   flex-wrap: wrap;
+
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
 .title {
-  background-color: rgb(234, 2, 255);
-  padding: 20px;
-}
-.works {
-  background-color: rgb(0, 247, 255);
+  font-weight: bold;
+  font-size: 32px;
   color: #fffb4a;
-  text-decoration: none;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border-bottom: 3px solid #fbf843;
-  width: 15%;
+  padding-right: 32px;
+  border-bottom: 4px solid #fffb4a;
 }
