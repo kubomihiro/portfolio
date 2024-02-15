@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styles from './About.module.scss'
 import profileImage from '../../../img/profile-image.jpg'
-import '/src/components/AboutContainer.module.scss'
+import '../AboutContainer.module.scss'
 
 export const About = () => {
   return (
