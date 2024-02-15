@@ -14,14 +14,14 @@ export const Header: React.FC = () => {
           <Link href='/'>Home</Link>
         </li>
         <li className={styles.MenuDetail}>
-          <Link href='/'>Works</Link>
+          <Link href='/works'>Works</Link>
         </li>
         <li className={styles.MenuDetail}>
           <Link href='/'>About</Link>
         </li>
-        <li className={styles.MenuDetail}>
+        {/* <li className={styles.MenuDetail}>
           <Link href='/'>Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </header>
   )
