@@ -6,6 +6,9 @@ import { EntryItem } from '@/components/EntryItem/EntryItem'
 import { EntryThumbnailContainer } from '@/components/EntryThumbnailContainer/EntryThumbnailContainer'
 import { About } from '@/components/About/About'
 import Link from 'next/link'
+// import styles from './page.css'
+// import './page.scss'
+
 // ;/インポートしてる/
 
 export default async function Home() {

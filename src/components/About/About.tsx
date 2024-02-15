@@ -2,10 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import styles from './About.module.scss'
 import profileImage from '../../../img/profile-image.jpg'
+import '/src/components/AboutContainer.module.scss'
 
 export const About = () => {
   return (
-    <div className={styles.abountContainer}>
+    // <div className={styles.abountContainer}>
+    <div id='aboutContainer'>
       <h2 className={styles.title}>About</h2>
       <div className={styles.container}>
         <figure className={styles.image}>
