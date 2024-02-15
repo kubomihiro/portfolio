@@ -20,7 +20,7 @@ export const EntryThumbnail = (props: Props) => {
 
   return (
     <article className={styles.entryItem}>
-      <h2>
+      <h2 className={styles.title}>
         <Link href={linkText}>{props.title}</Link>
       </h2>
 
