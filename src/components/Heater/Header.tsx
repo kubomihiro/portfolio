@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
           <Link href='/works'>Works</Link>
         </li>
         <li className={styles.MenuDetail}>
-          <Link href='/'>About</Link>
+          <Link href='/about'>About</Link>
         </li>
         {/* <li className={styles.MenuDetail}>
           <Link href='/'>Contact</Link>

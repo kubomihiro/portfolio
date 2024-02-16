@@ -13,7 +13,7 @@ const Menu: React.FC = () => {
           <Link href='/'>Home</Link>
         </li>
         <li>
-          <Link href='/'>Works</Link>
+          <Link href='/works'>Works</Link>
         </li>
         <li>
           <Link href='/'>About</Link>
