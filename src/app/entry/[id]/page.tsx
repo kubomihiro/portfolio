@@ -2,6 +2,7 @@ import { client } from '@/api'
 import { Metadata } from 'next'
 import { EntryDetail } from '@/components/EntryDetail/EntryDetail'
 import { EntryItem } from '@/components/EntryItem/EntryItem'
+import { PrevNextContainer } from '@/components/PrevNextContainer/PrevNextContainer'
 
 export async function generateStaticParams() {
   const { contents: entries } = await client.blogs.$get({
@@ -68,8 +69,13 @@ export default async function Entry({ params }: Props) {
   return (
     <>
       <EntryDetail title={entry.title} content={entry.content} eyecatch={entry.eyecatch} />
-      {prevEntry && <EntryItem {...prevEntry} />}
-      {nextEntry && <EntryItem {...nextEntry} />}
+
+      <PrevNextContainer prevEntry={prevEntry} nextEntry={nextEntry} />
+
+      {/* {prevEntry && <ArrowLeftLink {...prevEntry} />}
+      {nextEntry && <ArrowLeftLink {...nextEntry} />} */}
+
+      {/* {nextEntry && <NextPageItem {...nextEntry} />} */}
     </>
   )
 }
