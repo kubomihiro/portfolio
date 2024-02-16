@@ -1,6 +1,12 @@
 .more {
+  margin: 16px auto;
   text-align: right;
-  font-weight: bold;
   font-size: 25px;
-  padding-right: 32px;
+  width: calc(100% - 32px);
+  max-width: 1024px;
+
+  a {
+    color: yellow;
+    text-decoration: none;
+  }
 }
