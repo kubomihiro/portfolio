@@ -1,10 +1,6 @@
 .entryItem {
-  width: calc(25% - (16px * 3 / 4));
   border-radius: 16px;
   overflow: hidden;
-  @media (max-width: 800px) {
-    width: calc(50% - (16px / 2));
-  }
 }
 
 .entryItemTitle {
