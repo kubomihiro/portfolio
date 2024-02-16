@@ -6,6 +6,7 @@ import { EntryItem } from '@/components/EntryItem/EntryItem'
 import { EntryThumbnailContainer } from '@/components/EntryThumbnailContainer/EntryThumbnailContainer'
 import { About } from '@/components/About/About'
 import Link from 'next/link'
+import { More } from '@/components/More/More'
 // import styles from './page.css'
 // import './page.scss'
 
@@ -33,9 +34,7 @@ export default async function Home() {
     <>
       <EntryThumbnails entries={entries} />
       <div>
-        <p>
-          <Link href='/works'>and More</Link>
-        </p>
+        <More></More>
       </div>
 
       <About />
