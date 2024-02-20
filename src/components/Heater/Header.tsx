@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 export const Header: React.FC = () => {
   return (
+    <div  className={styles.box}>
     <header className={styles.header}>
       <h1 className={styles.title}>
         <Link href='/'>Mihiro&#39;s Portfolio</Link>
@@ -24,5 +25,6 @@ export const Header: React.FC = () => {
         </li> */}
       </ul>
     </header>
+    </div>
   )
 }
