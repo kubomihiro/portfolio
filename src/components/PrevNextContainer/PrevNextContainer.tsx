@@ -29,12 +29,12 @@ export const PrevNextContainer = (props: Props) => {
     <ul className={styles.prevNextContainer}>
       {prevEntry && (
         <li className={styles.prevLink}>
-          <Link href={prevEntryLinkText}>{prevEntry.title}</Link>
+          <Link href={prevEntryLinkText}>&#9664;{prevEntry.title}</Link>
         </li>
       )}
       {nextEntry && (
         <li className={styles.next}>
-          <Link href={nextEntryLinkText}>{nextEntry.title}</Link>
+          <Link href={nextEntryLinkText}>{nextEntry.title}	&#9654;</Link>
         </li>
       )}
     </ul>
