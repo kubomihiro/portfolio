@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { More } from '@/components/More/More'
 // import styles from './page.css'
 // import './page.scss'
+import profileImage from '../../img/home.jpg'
 
 // ;/インポートしてる/
 
@@ -32,11 +33,14 @@ export default async function Home() {
 
   return (
     <>
+    {/* <div  className={styles.homeimg}>
+            <Image src={profileImage} alt='home画像' />
+    </div>       */}
       <EntryThumbnails entries={entries} />
       <div>
         <More></More>
       </div>
-
+      
       <About />
     </>
   )
