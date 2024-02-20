@@ -8,6 +8,8 @@
   list-style-type: none;
   a {
     color: yellow;
+    text-decoration: none;
+    font-size: 20px;
     &:hover {
       opacity: 0.8;
     }
