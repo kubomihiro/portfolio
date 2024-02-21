@@ -20,7 +20,7 @@ export default async function Home() {
       offset: 0,
       limit: 4,
       //↑取得する件数
-      filters: 'publishedAt[greater_than]2023-12-20',
+      filters: 'publishedAt[greater_than]2023-12-11',
       //上の数字直すとキャッシュクリアされる
       fields: 'id,title,category,publishedAt,eyecatch,description',
     },
