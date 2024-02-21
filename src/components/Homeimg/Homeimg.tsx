@@ -7,8 +7,8 @@ import HomeImage from '../../../img/home.jpg'
 
 export const Homeimg = () => {
   return (
-    <div>
-    <figure>
+    <div  className={styles.box}>
+    <figure className={styles.image}>
       <Image src={HomeImage} alt='home画像'/>
     </figure> 
     </div>
