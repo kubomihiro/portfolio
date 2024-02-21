@@ -1,13 +1,16 @@
 
   .image {
     max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
     img {
-    //   display: block;
+      display: block;
       border-radius: 16px;
-      width: auto;
-      height: 300px;
+      width: 100%;
+      height: auto;
+         
     }
   }
   .box{
-    margin: 0 auto
+    margin: 20px
   }

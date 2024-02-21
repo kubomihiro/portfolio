@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Homeimg.module.scss'
 import Image from 'next/image'
-import HomeImage from '../../../img/home.jpg'
+import HomeImage from '../../../img/home3-min.jpeg'
 
 
 
