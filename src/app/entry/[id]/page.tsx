@@ -68,7 +68,7 @@ export default async function Entry({ params }: Props) {
 
   return (
     <>
-  <p></p>
+  
       <EntryDetail title={entry.title} content={entry.content} eyecatch={entry.eyecatch} />	
 
       <PrevNextContainer prevEntry={prevEntry} nextEntry={nextEntry} />
