@@ -11,7 +11,7 @@ export default async function Home() {
   const { contents: entries } = await client.blogs.$get({
     query: {
       offset: 0,
-      limit: 10,
+      limit: 100,
       filters: 'publishedAt[greater_than]2023-11-10',
       //上の数字直すとキャッシュクリアされる
       fields: 'id,title,category,publishedAt,eyecatch,description',
