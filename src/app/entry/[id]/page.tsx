@@ -49,7 +49,7 @@ export default async function Entry({ params }: Props) {
 
   const prev = await client.blogs.$get({
     query: {
-      limit: 1,
+      limit: 13,
       orders: '-publishedAt',
       fields: prevAndNextFields,
       filters: `publishedAt[less_than]${entry.publishedAt}`,
